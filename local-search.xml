@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>RCNN理解</title>
+    <link href="/2020/11/12/RCNN%E7%90%86%E8%A7%A3/"/>
+    <url>/2020/11/12/RCNN%E7%90%86%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<h3 id="一、简述"><a href="#一、简述" class="headerlink" title="一、简述"></a>一、简述</h3><p>RCNN作为目标检测的开山之作，具有非凡的意义。它是第一次利用深度学习的方法。虽然现在看来效果在现在看起来不尽人意，但在当时算是划时代的成就。RCNN主要流程有四个步骤：</p><p>候选区域生成</p><p>模型预训练</p><p>分类器训练</p><p>锚框回归</p><p>因此，本文就按照这四个步骤展开来讲。</p><h3 id="二、候选区域生成"><a href="#二、候选区域生成" class="headerlink" title="二、候选区域生成"></a>二、候选区域生成</h3><p>所谓候选区域生成，就是通过某种方法把图片中感兴趣的目标自动地标记出来。本算法使用selective search算法，要想知道selective search算法，就必须先了解Efficient Graph-Based Image Segmentation算法。</p><h4 id="1-Efficient-Graph-Based-Image-Segmentation算法"><a href="#1-Efficient-Graph-Based-Image-Segmentation算法" class="headerlink" title="1.Efficient Graph-Based Image Segmentation算法"></a>1.Efficient Graph-Based Image Segmentation算法</h4><h5 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h5><p>分割图像中的目标</p><h5 id="知识准备："><a href="#知识准备：" class="headerlink" title="知识准备："></a>知识准备：</h5><p><img src="/2020/11/12/RCNN%E7%90%86%E8%A7%A3/image-20201112155839019.png" alt="image-20201112160055887"></p><h5 id="算法流程"><a href="#算法流程" class="headerlink" title="算法流程"></a>算法流程</h5><p><img src="/2020/11/12/RCNN%E7%90%86%E8%A7%A3/image-20201112160220991.png" alt="image-20201112160220991"></p><h4 id="2-selective-search算法"><a href="#2-selective-search算法" class="headerlink" title="2.selective search算法"></a>2.selective search算法</h4><p>selective search算法是基于Efficient Graph-Based Image Segmentation算法分割出来的结果。</p><p><img src="/2020/11/12/RCNN%E7%90%86%E8%A7%A3/clip_image001.png" alt="selective search "></p><h3 id><a href="#" class="headerlink" title></a></h3><p>不想写了，直接粘几篇有用的博客吧。</p><p>RCNN总览: <a href="https://zhuanlan.zhihu.com/p/23006190">https://zhuanlan.zhihu.com/p/23006190</a></p><p>RCNN流程:<a href="https://blog.csdn.net/qq_36202348/article/details/88084675"> https://blog.csdn.net/qq_36202348/article/details/88084675 </a></p><p>锚框回归:<a href="https://blog.csdn.net/Bixiwen_liu/article/details/53840913"> https://blog.csdn.net/Bixiwen_liu/article/details/53840913 </a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>pytorch入门及其论文复现实战</title>
     <link href="/2020/11/08/pytorch%E5%85%A5%E9%97%A8%E5%8F%8A%E5%85%B6%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0%E5%AE%9E%E6%88%98/"/>
     <url>/2020/11/08/pytorch%E5%85%A5%E9%97%A8%E5%8F%8A%E5%85%B6%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0%E5%AE%9E%E6%88%98/</url>
